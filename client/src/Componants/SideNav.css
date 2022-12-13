@@ -1,8 +1,33 @@
 .sideNav{
 
-    width:10%;
-    background-color: darkgray;
+    width:11%;
+    background-color: #21262d;
     height: 100vh;
+    
 }
 
 
+ul{
+    list-style: none;
+    font-family: 'Poppins';
+    font-size: large;
+    padding-left: 10px;
+    color: white;
+}
+
+li{
+    margin-bottom: 16px;
+    
+    padding-left: 10px;
+    padding: 10px 0px 10px 7px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+li:hover{
+    background-color: #414B59;
+
+}
