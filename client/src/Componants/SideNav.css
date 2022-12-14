@@ -1,5 +1,6 @@
 .sideNav{
-
+    
+    order:1;
     width:11%;
     background-color: #21262d;
     height: 100vh;
