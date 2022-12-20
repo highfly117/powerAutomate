@@ -1,9 +1,11 @@
-    .navbar{
+    .navbarRE{
 
         background-color: white;
         width:100%;
         height: 5vh;
-        order:2
+        display: flex;
+        justify-content: center;
+        align-items:center;
 
     }
 

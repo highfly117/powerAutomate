@@ -5,7 +5,7 @@ const Navbar = () =>{
 
     return(
 
-        <div className="navbar"> 
+        <div className="navbarRE col"> 
             <div className="searchInput">
 
                 <input  placeholder="Search"></input>

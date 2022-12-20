@@ -7,7 +7,7 @@ import { faDiagramProject } from '@fortawesome/free-solid-svg-icons'
 
 const SideNav = () => {
     return(
-        <div className="sideNav">  
+        <div className="sideNav col-2">  
             <ul className="nav_List">
             <li> 
                 <FontAwesomeIcon icon={faDiagramProject} /> LOGO
