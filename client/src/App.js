@@ -20,9 +20,9 @@ function App() {
 
       <SideNav></SideNav>
 
-      <div className="row col-10">
+      <div className="row col" style={{"maxHeight": "75px","padding-right":"0px"}}>
 
-        <div className="row">
+        <div className="row" style={{"padding-right":"0px"}}>
 
           <Navbar></Navbar>
 
@@ -31,11 +31,12 @@ function App() {
 
 
 
-        <div className="row"><div className="col" style={{ width: '100px', height: '100px', background: 'green', order: 2 }}>{data} 2</div>
-          <div className="col" style={{ width: '100px', height: '100px', background: 'red', order: 2 }}>{data}</div>
+        <div className="row">
+          <div className="col jsonPanel" >{data} 2</div>
+          <div className="col infopanel" >{data}</div>
         </div>
 
-        
+
       </div>
 
 

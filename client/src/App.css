@@ -6,3 +6,22 @@
 
 }
 
+.infopanel{
+  
+    border-top: solid 1px #bfbfbf;
+    width: 100px;
+    height: 100vh;
+    background: white;
+    order: 2;
+    
+
+
+}
+
+.jsonPanel{
+    width: 100px;
+    height: 100vh;
+    background: light gray;
+
+
+}
