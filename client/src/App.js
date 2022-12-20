@@ -5,13 +5,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  const [data, setData] = React.useState(null);
-
-  React.useEffect(() => {
-    fetch("http://localhost:9000/testAPI")
-      .then((res) => res.text())
-      .then((data) => setData(data));
-  }, []);
+  
 
 
 
@@ -32,8 +26,8 @@ function App() {
 
 
         <div className="row">
-          <div className="col jsonPanel" >{data} 2</div>
-          <div className="col infopanel" >{data}</div>
+          <div className="col jsonPanel" ></div>
+          <div className="col infopanel" ></div>
         </div>
 
 
