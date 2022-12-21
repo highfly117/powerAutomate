@@ -2,7 +2,7 @@ import React from "react";
 import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUpload } from '@fortawesome/free-solid-svg-icons'
-
+import appendflowData from "./Utils/AppendData.js"
 
 class Uploadbutton extends React.Component {
     constructor(props) {
@@ -24,7 +24,11 @@ class Uploadbutton extends React.Component {
             axios.post("http://localhost:9000/testAPI", data, {
                 // receive two    parameter endpoint url ,form data
             }).then(function (response) {
-                console.log(response);
+                console.log(response.data);
+
+                appendflowData(response.data)
+
+
               })
               .catch(function (error) {
                 console.log(error);

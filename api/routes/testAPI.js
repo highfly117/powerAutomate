@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const multer = require('multer')
 const StreamZip = require('node-stream-zip');
+const fs = require('fs')
 
 
 let storage = multer.diskStorage({
@@ -31,7 +32,7 @@ router.post('/',(req, res) => {
                 storeEntries: true
             });
 
-            let zipDotTxtContents = "";
+            
 
             zip.on('ready', () => {
                 // Take a look at the files
@@ -42,16 +43,20 @@ router.post('/',(req, res) => {
                 }
 
                 // Read a file in memory
-                zipDotTxtContents = zip.entryDataSync('Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json').toString('utf8');
-                //console.log("The content of Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json is: " + zipDotTxtContents);
+               let zipDotTxtContents = zip.entryDataSync('Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json').toString('utf8');
+                console.log("The content of Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json is: " + zipDotTxtContents);
                 // Do not forget to close the file once you're done
                 zip.close();
+
+                
+
+                return res.status(200).send(zipDotTxtContents)
+
             });
 
 
 
-            return res.status(200).send(zipDotTxtContents);
-
+            
         });
     });
 

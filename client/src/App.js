@@ -26,8 +26,11 @@ function App() {
 
 
         <div className="row">
-          <div className="col jsonPanel" ></div>
-          <div className="col infopanel" ></div>
+          <div className="col-6 jsonPanel" >
+            <pre id="account" className="json-container"></pre>
+
+          </div>
+          <div className="col-6 infopanel" ></div>
         </div>
 
 
