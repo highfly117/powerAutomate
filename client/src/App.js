@@ -2,13 +2,9 @@ import React from "react";
 import Navbar from './Componants/Navbar';
 import SideNav from './Componants/SideNav'
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
-  
-
-
-
   return (
     <div className="App row">
 
@@ -25,10 +21,9 @@ function App() {
 
 
 
-        <div className="row">
+        <div className="row info-container" >
           <div className="col-6 jsonPanel" >
             <pre id="account" className="json-container"></pre>
-
           </div>
           <div className="col-6 infopanel" ></div>
         </div>

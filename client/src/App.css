@@ -1,27 +1,31 @@
+.App {
 
-
-.App{
-
-
-
+    overflow-y: hidden;
 }
 
-.infopanel{
-  
+.infopanel {
+
     border-top: solid 1px #bfbfbf;
     width: 100px;
     height: 100vh;
     background: white;
     order: 2;
-    
-
-
 }
 
-.jsonPanel{
+.jsonPanel {
     width: 100px;
     height: 100vh;
     background: light gray;
+}
 
+.info-container {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0;
+    padding-right: 0px !important;
+}
 
+.row {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0;
+    margin: 0px !important;
 }
