@@ -24,8 +24,3 @@
     padding-right: 0px !important;
 }
 
-.row {
-    --bs-gutter-x: 0 !important;
-    --bs-gutter-y: 0;
-    margin: 0px !important;
-}
