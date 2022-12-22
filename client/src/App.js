@@ -2,7 +2,9 @@ import React from "react";
 import Navbar from './Componants/Navbar';
 import SideNav from './Componants/SideNav'
 import './App.css';
-import bootstrap from 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css';
+
+
 
 function App() {
   return (

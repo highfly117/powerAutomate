@@ -1,7 +1,27 @@
+
+*{
+    
+  }
+
 .sideNav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
     background-color: #21262d;
-    height: 100vh;
-    width: 215px !important;
+    height: 100%;
+    width: 240px !important;
     color: white;
+    padding: 0;
+    margin: 0;
+   
+    box-sizing: border-box;
+
+}
+
+ul{
+    list-style: none !important;
+    text-decoration: none;
+
+
 }
 
