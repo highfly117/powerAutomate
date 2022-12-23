@@ -11,17 +11,105 @@
     height: 100%;
     width: 240px !important;
     color: white;
-    padding: 0;
+    padding: 6px 14px 6px 0px;
     margin: 0;
    
     box-sizing: border-box;
 
 }
 
-ul{
-    list-style: none !important;
-    text-decoration: none;
+.sideNav .logo-content .logo{
 
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
 
 }
 
+.logo-content .logo .react-icons{
+  font-size: 28px;
+  margin-right: 5px;
+
+}
+
+
+.logo-content .logo .logo_name{
+
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+
+.sideNav ul{
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+.sideNav ul li{
+  position: relative;
+  height: 65px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+
+}
+
+
+.sideNav ul li a{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4 ease;
+  border-radius: 12px;
+}
+
+.sideNav ul li a:hover{
+  color: #11101d;
+  background: #fff;
+}
+
+.sideNav ul li input{
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  left: 5px;
+  right:0;
+  border-radius: 12px;
+  outline: none;
+  border:none;
+  padding-left: 50px;
+  font-size:18px;
+  
+}
+
+ .react-icons{ 
+  height: 30px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+.sideNav #btn{
+  color: #fff;
+  position: absolute;
+  left: 90%;
+  top: 6px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+
+#faSearch{
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+
+}
