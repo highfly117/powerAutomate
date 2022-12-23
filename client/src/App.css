@@ -3,6 +3,23 @@
     overflow-y: hidden;
 }
 
+.home_content{
+    position: absolute;
+    height: 100%;
+    width:calc(100% - 240px);
+    left:240px
+}
+
+.home_content .text {
+
+    font-size: 25px;
+    font-weight: 500;
+    color: #21262d;
+    margin-top:12px
+}
+
+
+
 /* .infopanel {
 
     border-top: solid 1px #bfbfbf;

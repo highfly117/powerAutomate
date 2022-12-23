@@ -11,7 +11,9 @@ function App() {
     <div className="App">
 
       <SideNav></SideNav>
-
+      <div className="home_content">
+        <div className="text">Home Content</div>
+      </div>
 
       
 
