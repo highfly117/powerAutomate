@@ -6,8 +6,9 @@
 .home_content{
     position: absolute;
     height: 100%;
-    width:calc(100% - 240px);
-    left:240px
+    width: calc(100% - 78px);
+    transition: all 0.5 ease;
+    
 }
 
 .home_content .text {
@@ -15,10 +16,13 @@
     font-size: 25px;
     font-weight: 500;
     color: #21262d;
-    margin-top:12px
+    margin:12px
 }
 
-
+.sidebar.active ~ .home_content{
+    width:calc(100% - 240px);
+    left:240px
+}
 
 /* .infopanel {
 
