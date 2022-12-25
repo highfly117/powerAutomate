@@ -1,5 +1,4 @@
 import $ from "jquery"
-import { prettyPrintJson } from 'pretty-print-json';
 
 
 
@@ -7,9 +6,10 @@ const appendflowData = (data) =>{
 
     alert("file uploaded ")
 
-    const elem = document.getElementById('account')
+    $("#jsonText").append('<p>'+ JSON.stringify(data) +'</p>')
 
-    elem.innerHTML = prettyPrintJson.toHtml(data)
+    console.log(data)
+    console.log(JSON.stringify(data))
     
 
 

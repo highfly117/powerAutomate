@@ -26,9 +26,9 @@ const SideNav = () => {
     const collapse = () => {
         sideRef.current.classList.toggle('active')
     } 
-    
+
     return (
-        <div ref={sideRef}className="sideNav">
+        <div ref={sideRef}className="sideNav active">
 
             <div className="logo_content">
                 <div className="logo">
