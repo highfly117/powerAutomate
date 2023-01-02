@@ -11,22 +11,13 @@ import { RiOrganizationChart } from "react-icons/ri";
 import { VscJson } from "react-icons/vsc";
 import { IconContext } from "react-icons/lib";
 
-
-
-
-
-
-
-
-
-const SideNav = () => {
+const SideNav = (props) => {
 
     const sideRef = useRef(null);
-
     const collapse = () => {
         sideRef.current.classList.toggle('active')
     } 
-
+    console.log(props)
     return (
         <div ref={sideRef}className="sideNav active">
 
@@ -43,7 +34,7 @@ const SideNav = () => {
                         <input type={"text"} placeholder={"search...."}></input>
                     </a>
                 </li>
-                <Uploadbutton></Uploadbutton>
+                <Uploadbutton updateCode={props.updateCode}></Uploadbutton>
                 <li>
                     <a href="#">
                         <HiVariable className="react-icons" />

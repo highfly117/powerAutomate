@@ -2,17 +2,15 @@ import $ from "jquery"
 
 
 
-const appendflowData = (data) =>{
+const appendflowData = (data) => {
 
     alert("file uploaded ")
 
-    $("#jsonText").append('<p>'+ JSON.stringify(data) +'</p>')
-
-    console.log(data)
-    console.log(JSON.stringify(data))
-    
-
+    $(".language-JSON").prepend(JSON.stringify(data,undefined,4))
 
 }
+
+
+
 
 export default appendflowData

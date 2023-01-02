@@ -1,28 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import TopBar from './Componants/TopBar';
 import SideNav from './Componants/SideNav'
-import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import SyntaxHighlighter from "react-syntax-highlighter"
+import {a11yDark} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import './App.css';
+
 
 function App() {
 
-  
+  const [code, setCode] = useState(`{
+    "foo":true,
+    "Bar":"yes",
+    "how Much":9001
+  }`)
+
+  const updateCode = (newCode) => {
+    console.log("code updated")
+
+  }
+
   return (
     <div className="App">
 
-      <SideNav></SideNav>
+      <SideNav updatecode={updateCode}></SideNav>
       <TopBar className="home_content"></TopBar>
 
-      <div className="Panels">
-        <div className="jsonPanel">
-        <SyntaxHighlighter id="jsonText" language="JSON" style={docco}>
+      <div className="row Panels">
+        <div className="col-6 jsonPanel">Flow JSON
+          <SyntaxHighlighter children={code} showLineNumbers={true} id="jsonText" language="JSON" style={a11yDark}>
 
-
-      
-        </SyntaxHighlighter>
+          </SyntaxHighlighter>
         </div>
-        <div className="infopanel">
+        <div className="col-6 infopanel">
           details
         </div>
       </div>
