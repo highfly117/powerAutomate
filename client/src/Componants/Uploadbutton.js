@@ -1,55 +1,51 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpload } from '@fortawesome/free-solid-svg-icons'
-import appendflowData from "./Utils/AppendData.js"
 import { BiUpload } from "react-icons/bi";
 
 const Uploadbutton = (props) => {
     const [zipfile, setzipfile] = useState(null);
-    const [inputValue, setInputValue] = useState('')
-    const data = new FormData()
-    useEffect(
 
-        () => {
+
+    const data = new FormData()
+
+    const sendData = () => {
+
+        if (zipfile == null) {
+
+        } else {
             data.append('file', zipfile)
             axios.post("http://localhost:9000/testAPI", data, {
-                // receive two    parameter endpoint url ,form data
             }).then(function (response) {
                 console.log(response.data);
-
                 //appendflowData(response.data)
-
-                props.updateCode()
-
-
+                props.updateCode(JSON.stringify(response.data,undefined,4))
             })
                 .catch(function (error) {
                     console.log(error);
                 })
-        },[inputValue]
-        )
+        }
+    }
+    const handleChange = (e) => {
+        setzipfile(e.target.files[0])
+        console.log('hello from uploadbutton')
+       
+    }
 
-    
+    useEffect(() => {
+        sendData();
+
+
+    })
+
 
     return (
         <div>
             <li>
                 <a href="#">
-                    <label for="file-input" style={{ "display": "list-item" }} >
+                    <label htmlFor="file-input" style={{ "display": "list-item" }} >
                         <BiUpload className="react-icons"></BiUpload>
                         <span className="links_name">Upload zip File</span>
-                        <input id="file-input" style={{ "display": "none" }} value={inputValue} type="file" onChange={(e) => {
-
-                            setInputValue(e.target.value)
-
-                            
-
-                            setzipfile(e.target.files[0])
-
-
-
-                        }}></input>
+                        <input id="file-input" style={{ "display": "none" }} type="file" onChange={handleChange}></input>
                     </label>
                 </a>
                 <span className="tooltips">Upload zip File</span>

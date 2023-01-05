@@ -18,7 +18,7 @@ let upload = multer({ storage: storage }).single('file')
 
 router.post('/',(req, res) => {
 
-        if(req.file != undefined){
+        
 
             upload(req, res, (err) => {
                 if (err instanceof multer.MulterError) {
@@ -45,7 +45,7 @@ router.post('/',(req, res) => {
                     }
     
                     // Read a file in memory
-                   let zipDotTxtContents = zip.entryDataSync('Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json').toString('utf8');
+                   let zipDotTxtContents = zip.entryDataSync('Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json');
                     console.log("The content of Microsoft.Flow/flows/d58f5d5c-3720-4d48-a085-72fb1f403136/definition.json is: " + zipDotTxtContents);
                     // Do not forget to close the file once you're done
                     zip.close();
@@ -55,18 +55,12 @@ router.post('/',(req, res) => {
                     return res.status(200).send(zipDotTxtContents)
     
                 });
-    
-    
-    
-                
             });
-
-        }else{
 
         }
 
         
-    });
+    );
 
 
 

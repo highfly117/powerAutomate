@@ -1,15 +1,13 @@
 import React,{useRef} from "react";
 import "./CSS/SideNav.css";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDiagramProject, faBars, faTerminal } from '@fortawesome/free-solid-svg-icons'
 import Uploadbutton from "./Uploadbutton";
 import { DiReact } from 'react-icons/di'
 import { FaCodeBranch, FaSearch } from 'react-icons/fa'
-import { BiMenu, BiUpload } from "react-icons/bi";
+import { BiMenu } from "react-icons/bi";
 import { HiVariable } from "react-icons/hi";
 import { RiOrganizationChart } from "react-icons/ri";
 import { VscJson } from "react-icons/vsc";
-import { IconContext } from "react-icons/lib";
+
 
 const SideNav = (props) => {
 
@@ -28,7 +26,7 @@ const SideNav = (props) => {
                 <BiMenu onClick={collapse} className="react-icons" id="btn"></BiMenu>
             </div>
             <ul className="nav_list">
-                <li style={{ "margin-bottom": "13px" }}>
+                <li>
                     <a className="nohover" href="#">
                         <FaSearch onClick={collapse} id="faSearch" className="react-icons" />
                         <input type={"text"} placeholder={"search...."}></input>
