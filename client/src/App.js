@@ -11,6 +11,7 @@ import 'prismjs/themes/prism-tomorrow.css';
 import SyntaxHighlighter from "react-syntax-highlighter"
 import {a11yDark} from "react-syntax-highlighter/dist/esm/styles/hljs";
 import './App.css';
+import './Componants/CSS/prismjshack.css'
 
 
 function App() {

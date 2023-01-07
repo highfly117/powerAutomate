@@ -52,6 +52,7 @@
 #jsonText{
     height: calc(100vh - 81px);
     overflow-x: hidden;
+    overflow-y: auto !important;
     
 
 }
