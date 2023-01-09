@@ -15,7 +15,7 @@ const SideNav = (props) => {
     const collapse = () => {
         sideRef.current.classList.toggle('active')
     } 
-    console.log(props)
+    
     return (
         <div ref={sideRef}className="sideNav active">
 

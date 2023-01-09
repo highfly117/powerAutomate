@@ -24,7 +24,7 @@ function App() {
 
   const updateCode = (newCode) => {
     console.log("code updated")
-    console.log(newCode)
+    //console.log(newCode)
     setCode(newCode)
 
   }

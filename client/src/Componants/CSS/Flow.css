@@ -1,18 +1,35 @@
-.msla-card-placeholder.msla-card-fixed-width, .msla-card.msla-card-fixed-width{
-    -webkit-text-size-adjust: 100%;
-    --sash-size: 4px;
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    color: rgb(51, 51, 51);
-    text-align: center;
-    border: 1px solid #cac8c7;
-    font-family: wf_segoe-ui_normal,Segoe UI,Segoe WP,Tahoma,Arial,sans-serif;
-    font-size: 12px;
-    background-color: #fff;
-    box-sizing: border-box;
-    margin: 0 auto;
-    min-width: 200px;
-    max-width: 600px;
-    width: 100%;
+.Flow{
+    
+}
+
+.Flow .Card{
+    
+}
+
+.Flow .CardTitle {
+    display: flex;
+    height: 44px;
+}
+
+.Flow .TitleHeader{
+    background-color: rgba(119, 11, 214, 0.15);
+    display: flex;
+}
+
+.Flow .icon {
+    background-color: rgb(119, 11, 214);
+}
+
+.Flow .title {
+    background-color: rgba(119, 11, 214, 0.15);
+}
+
+.Flow .CardButtons{
+    background-color: transparent;
+}
+
+.Flow .CardOptions{
+   
 
 }
+
