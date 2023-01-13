@@ -12,7 +12,7 @@ const Uploadbutton = (props) => {
     } else {
       data.append("file", zipfile);
       axios
-        .post("/testAPI", data, {})
+        .post("https://wviid8-9000.preview.csb.app/testAPI", data, {})
         .then(function (response) {
           props.updateCode(JSON.stringify(response.data, undefined, 4));
         })
