@@ -17,7 +17,6 @@ const Uploadbutton = (props) => {
             axios.post("http://localhost:9000/testAPI", data, {
             }).then(function (response) {
                 
-                
                 props.updateCode(JSON.stringify(response.data,undefined,4))
             })
                 .catch(function (error) {
@@ -27,14 +26,10 @@ const Uploadbutton = (props) => {
     }
     const handleChange = (e) => {
         setzipfile(e.target.files[0])
-        
-       
     }
 
     useEffect(() => {
         sendData();
-
-
     })
 
 

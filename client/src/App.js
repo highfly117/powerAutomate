@@ -22,6 +22,13 @@ function App() {
     "how Much":9001
   }`)
 
+  const [code2, setCode2] = useState(`{
+    "foo":true,
+    "Bar":"yes",
+    "how Much":9001
+  }`)
+  
+
   const updateCode = (newCode) => {
     console.log("code updated")
     //console.log(newCode)
@@ -41,7 +48,7 @@ function App() {
 
           </SyntaxHighlighter> */}
 
-          <Editor preClassName={'language-json'}  id="jsonText" value={code} onValueChange={code => setCode(code)} highlight={code => highlight(code, languages.json, 'json')} padding={10} style={{fontFamily: '"Fira code", "Fira Mono", monospace'}}></Editor>
+          <Editor preClassName={'language-json'}  id="jsonText" value={code} onValueChange={(code) =>  {setCode(code)} } highlight={code => highlight(code, languages.json, 'json')} padding={10} style={{fontFamily: '"Fira code", "Fira Mono", monospace'}}></Editor>
         </div>
         <div className="col-4 infopanel">
           details
