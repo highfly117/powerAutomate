@@ -32,7 +32,7 @@ const SideNav = (props) => {
                         <input type={"text"} placeholder={"search...."}></input>
                     </a>
                 </li>
-                <Uploadbutton updateCode={props.updateCode}></Uploadbutton>
+                <Uploadbutton  ></Uploadbutton>
                 <li>
                     <a href="#">
                         <HiVariable className="react-icons" />

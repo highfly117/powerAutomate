@@ -1,5 +1,6 @@
 import React from "react";
 import "./CSS/Flow.css"
+import {VscVariableGroup} from "react-icons/vsc"
 
 const Flow = () => {
 
@@ -8,26 +9,7 @@ const Flow = () => {
 
     <div className="Flow">
 
-      <div className="Card">
-
-        <div className="CardTitle">
-          <div className="TitleHeader">
-            <div className="icon">ICON</div>
-            <div className="title"> Variable 1</div>
-          </div>
-          <div className="CardButtons">
-            <div className="CardOptions">. . .</div>
-          </div>
-
-        </div>
-
-        <div className="CardBody">
-
-
-        </div>
-
-      </div>
-
+     
     </div>
   );
 }

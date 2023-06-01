@@ -3,25 +3,35 @@
 }
 
 .Flow .Card{
-    
+    margin: 0 auto;
+    min-width: 125px;
+    width: 200px;
+    font-size: 12px;
 }
 
 .Flow .CardTitle {
     display: flex;
     height: 44px;
+    background-color: rgba(119, 11, 214, 0.15);
+    border: 1px solid #cac8c7;
+    
 }
 
 .Flow .TitleHeader{
-    background-color: rgba(119, 11, 214, 0.15);
+    
     display: flex;
+    align-items: center;
 }
 
 .Flow .icon {
     background-color: rgb(119, 11, 214);
+    padding: 5px 5px;
 }
 
 .Flow .title {
-    background-color: rgba(119, 11, 214, 0.15);
+    padding: 10px 5px;
+    margin-right: 5px;
+    width:130px
 }
 
 .Flow .CardButtons{
